@@ -3,95 +3,98 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — WaveStash</title>
+<title>Privacy Policy &amp; Terms of Use — WaveStash</title>
 <style>
   body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #201A15; background: #FAF7F2; margin: 0; padding: 0; }
   main { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
   h1 { font-size: 2rem; margin-bottom: 0.25rem; }
   .meta { color: #6F6259; margin-bottom: 2rem; }
   h2 { font-size: 1.25rem; margin-top: 2.25rem; color: #201A15; }
+  h3 { font-size: 1.07rem; margin-top: 1.5rem; }
   p, li { font-size: 1.02rem; }
   ul { padding-left: 1.4rem; }
   li { margin-bottom: 0.4rem; }
   strong { color: #201A15; }
   footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #ddd; color: #6F6259; font-size: 0.95rem; }
+  .note { border-left: 3px solid #A58A72; padding-left: 16px; }
+  a { color: #72543D; }
+  .section-nav { margin: 1.25rem 0 1.75rem; padding: 0.85rem 1rem; border: 1px solid #DDD2C7; border-radius: 6px; }
+  .section-nav a + a { margin-left: 1.5rem; }
+  #privacy-policy, #terms-of-use { scroll-margin-top: 1.5rem; }
 </style>
 </head>
 <body>
 <main>
-<h1>Privacy Policy — WaveStash</h1>
-<p class="meta"><strong>Effective date:</strong> September 29, 2026<br>
-<strong>Digital Coast Software</strong> ("we", "us", "our") publishes WaveStash, a local-first read-it-later app for Android. This policy explains what information the app handles and what leaves your device.</p>
+<h1>WaveStash Privacy Policy &amp; Terms of Use</h1>
+<p class="meta"><strong>Effective date:</strong> November 3, 2026<br>
+<strong>Publisher:</strong> Digital Coast Software ("we", "us", "our")<br>
+<strong>Contact:</strong> <a href="mailto:digitalcoastsoftware@gmail.com">digitalcoastsoftware@gmail.com</a></p>
+<p>WaveStash is a local-first Android reading app. This document explains how information is handled and the conditions for using WaveStash, including its optional paid Pro upgrade. Please read both parts.</p>
 
-<h2>1. The short version</h2>
-<p>WaveStash stores your articles, highlights, notes, tags, and settings <strong>on your device</strong>. We require no account, operate no servers for the app, show no ads, and use no analytics or tracking.</p>
-<p>Information leaves your device only when:</p>
+<nav class="section-nav" aria-label="Document sections"><a href="#privacy-policy">Privacy Policy</a><a href="#terms-of-use">Terms of Use</a></nav>
+
+<h2 id="privacy-policy">Part A — Privacy Policy</h2>
+<h3>1. Privacy at a glance</h3>
+<p>Your saved web pages, imported books and documents, highlights, notes, tags, and reading preferences are primarily stored on your device. You do not need a WaveStash account. We do not sell your personal information or use advertising identifiers for targeted advertising. WaveStash does, however, use a limited developer-operated reporting service: it automatically sends a one-time installation event and sends problem reports when you choose to submit them. Those events are relayed to Discord as described below.</p>
+<h3>2. Information stored locally</h3>
 <ul>
-  <li>(a) the app downloads an article from a publisher's website at your request;</li>
-  <li>(b) you make a purchase through Google Play;</li>
-  <li>(c) you optionally use a third-party voice service with your own API key; or</li>
-  <li>(d) you choose to send us a problem report.</li>
+<li>Saved web pages, downloaded text and images, imported EPUB/PDF and other supported files;</li>
+<li>Highlights, notes, tags, bookmarks, reading progress, and library organization;</li>
+<li>Appearance, language, audio, and other preferences;</li>
+<li>Purchase entitlement and locally maintained feature-allowance information.</li>
 </ul>
-
-<h2>2. Information we do not collect</h2>
+<p>We do not routinely upload your reading library, imported documents, highlights, or notes to our reporting service. Your device or operating-system backup provider may handle copies under its own settings and policies.</p>
+<h3>3. Automatic installation notification</h3>
+<p>On first launch, WaveStash automatically sends a limited installation event to a developer-operated Cloudflare Worker, which forwards the event to a Discord channel used by Digital Coast Software. The event contains the app version name, app version code, and a timestamp. This helps us understand new installations and version adoption. The event does not intentionally include your name, email address, advertising ID, reading history, notes, or saved content.</p>
+<p>As with ordinary internet communications, Cloudflare and potentially other network intermediaries may process technical connection data such as your IP address, request timing, and headers. Discord processes the forwarded event under its own terms and privacy practices. We do not use the installation event for targeted advertising or individual reading-behavior profiling. The installation event is automatic and is not conditional on submitting a problem report.</p>
+<h3>4. Optional problem reports</h3>
+<p>When you choose to submit a problem report, WaveStash may send the associated page URL, selected issue category, your written description, app version, and relevant extraction or diagnostic details to our Cloudflare Worker for delivery to Discord. A fallback may open your email app with a draft instead. The report feature is not intended to transmit the full article or your complete library. However, a URL or a note you submit may itself reveal personal or sensitive information, so please review it before sending and avoid including unnecessary personal details.</p>
+<p>Reports are used to investigate and improve WaveStash. They may remain in Discord or operational service logs until deleted according to the applicable service settings and our operational practices. We do not promise a fixed deletion period that we cannot verify. Contact us if you wish to request deletion of a report; we will review and act on requests as required by applicable law and subject to our ability to identify the report.</p>
+<h3>5. Other circumstances in which information leaves your device</h3>
 <ul>
-  <li>No account, identity, or contact information. There is no sign-up and no login.</li>
-  <li>No analytics, usage tracking, advertising identifiers, or behavioral profiling.</li>
-  <li>No in-app crash-reporting SDKs. Note: if you installed WaveStash through Google Play, Google may collect anonymized crash and performance diagnostics under Google's own privacy policy. That collection is by Google, not by us.</li>
+<li><strong>Web content:</strong> When you retrieve a page or online book, the publisher, download host, or content provider receives a network request and may process your IP address and other standard request data under its policies.</li>
+<li><strong>Google Play:</strong> Google processes purchases, billing, and certain app distribution and diagnostic information under its own policies. We do not receive your payment-card details. WaveStash checks purchase entitlement using Google Play services.</li>
+<li><strong>Optional online voice providers:</strong> If WaveStash offers a third-party online voice integration and you choose to configure and use it, selected text and necessary service credentials may be transmitted to that provider. Its terms and privacy policy apply.</li>
+<li><strong>Optional downloads:</strong> Downloading enhanced voice models or other optional resources contacts the relevant download host, which may process ordinary connection metadata.</li>
+<li><strong>Device backup:</strong> Your Android or other backup provider may back up eligible application data depending on device settings. Sensitive keys may be excluded from backup.</li>
 </ul>
+<h3>6. On-device processing</h3>
+<p>Supported on-device speech synthesis and on-device AI functions process selected content locally during ordinary use. They do not require us to receive the content for that processing. Availability depends on device compatibility, installed models, and app version. Features using an explicitly selected online service are different and are described above.</p>
+<h3>7. Permissions and security</h3>
+<p>WaveStash uses internet access for content retrieval, downloads, purchases, and reporting; notifications and foreground-service capabilities for applicable playback and background tasks; and other permissions necessary for supported functions. We use HTTPS for the developer-operated reporting relay and take reasonable steps to limit access to information we receive. No internet transmission or storage system can be guaranteed completely secure.</p>
+<h3>8. Retention and your choices</h3>
+<p>You can manage or delete local library content in WaveStash and remove local app data through your device. Uninstalling the app generally removes its local app storage, subject to device backups or copies you exported. Deleting local data does not automatically delete an installation event or problem report already sent to our reporting services. For questions or privacy requests concerning information we control, contact us at the address above. We will respond in accordance with applicable law.</p>
+<h3>9. Children</h3>
+<p>WaveStash is not directed to children under 13. We do not knowingly seek personal information from children under 13. If you believe a child has provided personal information through a report, contact us.</p>
+<h3>10. Service providers and international processing</h3>
+<p>Cloudflare provides the developer-operated relay infrastructure; Discord receives developer notifications and problem reports; Google provides app distribution and billing. These companies may process data in countries outside your province or country, subject to their own policies and applicable law. For more information, consult their published privacy policies.</p>
+<h3>11. Privacy policy changes</h3>
+<p>We may update this Privacy Policy as WaveStash changes. We will publish a revised effective date and provide additional notice or obtain consent when required by applicable law. A material change does not retroactively authorize data processing that legally requires new consent.</p>
 
-<h2>3. Information stored on your device</h2>
-<p>The following is stored locally on your device in the app's private storage:</p>
-<ul>
-  <li>Saved articles, including downloaded article text and images for offline reading;</li>
-  <li>Highlights, notes, and tags;</li>
-  <li>Reading preferences (theme, fonts, display settings);</li>
-  <li>Your Pro purchase entitlement status (whether Pro features are unlocked).</li>
-</ul>
-<p>We operate no servers that receive or store this data. Uninstalling the app deletes it from the device (subject to your device's own backup behavior — see §8).</p>
-
-<h2>4. When information leaves your device</h2>
-<p><strong>(a) Downloading articles.</strong> When you save a link, WaveStash fetches the article directly from the publisher's website so you can read it offline. That website receives a standard web request — much like visiting it in a browser — which includes your IP address. The publisher's privacy policy applies to that request, not ours.</p>
-<p><strong>(b) Purchases.</strong> WaveStash Pro is sold as a one-time purchase through Google Play. Payment information is processed by Google under the Google Play Terms of Service and Google's Privacy Policy. We never see, handle, or store your card or payment details. The app stores only the resulting entitlement (Pro active or not) locally on your device.</p>
-<p><strong>(c) Optional third-party voice service.</strong> The built-in on-device voices process everything locally and transmit nothing. If you choose to enter your own API key for a third-party speech provider (for example, LemonFox), the text you choose to listen to is sent to that provider to generate audio, and that provider's privacy policy applies to the transmission. Your API key is encrypted in the device keystore, is excluded from device backups, and must be re-entered if you reinstall the app.</p>
-<p><strong>(d) Problem reports.</strong> If you tap "Report a problem" on an article, the app sends: the article URL, the issue category you selected, any note you typed, the app version, and technical details about the extraction. It does <strong>not</strong> send the full article text. Reports go to the developer for debugging. Please do not include personal information in the note field.</p>
-
-<h2>5. On-device AI and speech processing</h2>
-<p>Where supported, AI-generated article summaries are produced entirely on-device. Article text used to generate a summary does not leave your phone. On-device text-to-speech likewise processes locally with no transmission.</p>
-
-<h2>6. App permissions</h2>
-<p>WaveStash requests only the permissions it needs to function:</p>
-<ul>
-  <li><strong>Network access</strong> — to download articles you save.</li>
-  <li><strong>Notifications and foreground service</strong> — active only while Listen (audio playback) is playing, to provide playback controls.</li>
-</ul>
-
-<h2>7. Your control and data retention</h2>
-<p>You can delete articles, highlights, notes, and tags at any time within the app, and you can export your articles and annotations. Local data is retained until you delete it or uninstall the app. Because we keep no server-side copy, we cannot recover data you delete.</p>
-
-<h2>8. Device backups</h2>
-<p>Your device's own backup service (for example, Google backup) may include app data according to your system backup settings. Third-party API keys you enter are excluded from backups. You can manage backup behavior in your device's system settings.</p>
-
-<h2>9. Children</h2>
-<p>WaveStash is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
-
-<h2>10. Third-party content and publishers</h2>
-<p>Articles displayed in WaveStash belong to their respective publishers. We do not create, endorse, or verify article content. Extraction and summarization are automated processes that may be incomplete, inaccurate, or out of date; AI summaries are provided for convenience only — verify important information against the original source. WaveStash does not circumvent paywalls, login walls, DRM, or other publisher access controls. Your use of publisher content remains subject to those publishers' terms.</p>
-
-<h2>11. No warranties</h2>
-<p>WaveStash is provided "as is" and "as available", without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, accuracy, and non-infringement.</p>
-
-<h2>12. Limitation of liability</h2>
-<p>To the maximum extent permitted by applicable law, Digital Coast Software shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, revenue, data, or goodwill, arising out of or related to your use of, or inability to use, WaveStash — even if we have been advised of the possibility of such damages. Our total liability for any claim arising out of or related to the app shall not exceed the amount you paid for the app, if any.</p>
-
-<h2>13. Changes to this policy</h2>
-<p>If we change this policy, we will post the updated version with a new effective date. Material changes will be noted in the app or its release notes. Your continued use of the app after changes take effect constitutes acceptance of the updated policy.</p>
-
-<h2>14. Contact</h2>
-<p>For questions about this policy, or to make a privacy request (note: because we store no account or server-side data, most requests can be fulfilled directly on your device), contact:</p>
-<p><strong>digitalcoastsoftware@gmail.com</strong><br>Digital Coast Software</p>
-
-<footer>© 2026 Digital Coast Software. WaveStash Privacy Policy, effective September 29, 2026.</footer>
+<h2 id="terms-of-use">Part B — Terms of Use</h2>
+<h3>12. Acceptance and permitted use</h3>
+<p>By installing or using WaveStash, you agree to these Terms of Use to the extent permitted by applicable law. If you do not agree, do not use the app. WaveStash is licensed for lawful personal use under these terms and any applicable Google Play terms. You remain responsible for the content you choose to retrieve, import, store, or share.</p>
+<h3>13. Reading content and third-party rights</h3>
+<p>Web pages, books, documents, and other third-party materials belong to their respective owners. WaveStash does not grant rights to reproduce or distribute content beyond those you already have. You must comply with applicable copyright law and third-party terms. WaveStash is not designed to bypass digital rights management, paywalls, or access controls. Content retrieval, extraction, search, and automated summaries may be unavailable, incomplete, inaccurate, or outdated.</p>
+<h3>14. Free features and Pro purchase</h3>
+<p>WaveStash offers free functionality and an optional one-time Pro in-app purchase through Google Play. Pro unlocks the paid features described on the purchase screen at the time of purchase, subject to these Terms and applicable law. A one-time purchase is not a subscription and does not promise perpetual operation of every feature, support for every device, or indefinite availability of third-party services. Google Play manages payment, refunds, and purchase administration under its applicable policies. Purchase restoration and entitlement checks may require access to Google Play and the purchasing Google account.</p>
+<h3>15. Experimental enhanced offline voices</h3>
+<p class="note"><strong>Important:</strong> Enhanced offline voices, including voices or speech models based on Kokoro, are optional, experimental enhancements. They are not a guaranteed permanent component of WaveStash Pro and should not be the sole basis for purchasing Pro. Availability, voice selection, supported languages, audio quality, download access, and device compatibility may change.</p>
+<p>These features may depend on third-party models, software, licenses, distribution channels, or other resources outside our control. We may modify, replace, limit, suspend, or discontinue particular enhanced voices when reasonably necessary for legal, licensing, security, technical, compatibility, performance, cost, or maintenance reasons. We may offer alternative voices or playback methods, but cannot promise an equivalent replacement in every case.</p>
+<p>Removal or modification of an experimental voice does not, by itself, automatically cancel a Pro purchase or create a contractual promise of a refund. <strong>Nothing in these Terms excludes refunds, remedies, or other rights that cannot legally be waived</strong>, including applicable consumer protection rights and Google Play policies. Any material purchase representations made to you remain relevant to your rights.</p>
+<h3>16. Other experimental features and availability</h3>
+<p>Features identified as beta, preview, or experimental may change or be discontinued. Device capabilities, Android updates, external websites, content formats, and third-party services can affect functionality. We may update WaveStash to maintain security, legal compliance, compatibility, or service quality. We will not knowingly misrepresent the features included in a paid purchase.</p>
+<h3>17. No guarantee of content accuracy or uninterrupted operation</h3>
+<p>WaveStash and its automated extraction, summarization, and speech features are provided for convenience. Summaries and other generated output may contain errors. Check important information against authoritative sources. We do not guarantee uninterrupted operation, universal file compatibility, or availability of external resources.</p>
+<h3>18. Backups and loss of data</h3>
+<p>You are responsible for maintaining appropriate backups of important reading material and annotations. Device failure, app removal, storage corruption, operating-system changes, or other events can result in loss of locally stored information. Export and backup tools may be available, but no backup or restoration method is guaranteed to recover every item in every circumstance.</p>
+<h3>19. Warranties and liability</h3>
+<p>To the extent permitted by applicable law, WaveStash is provided "as is" and "as available," without warranties beyond those that cannot lawfully be excluded. To the extent permitted by applicable law, Digital Coast Software is not responsible for indirect or consequential losses arising from use or unavailability of the app. Any limitation of liability applies only where legally enforceable and does not limit mandatory consumer remedies, liability that cannot lawfully be excluded, or rights under applicable law.</p>
+<h3>20. Changes to these terms</h3>
+<p>We may revise these Terms to reflect changes to WaveStash, law, or third-party dependencies. We will publish an updated effective date and provide notice or request acceptance where required. Changes do not eliminate rights you already have under applicable law or retroactively alter completed purchases in ways prohibited by law.</p>
+<h3>21. Contact</h3>
+<p>For support, privacy questions, or questions about these Terms, email <a href="mailto:digitalcoastsoftware@gmail.com">digitalcoastsoftware@gmail.com</a>.</p>
+<footer>© 2026 Digital Coast Software. WaveStash Privacy Policy &amp; Terms of Use. Effective November 3, 2026.</footer>
 </main>
 </body>
 </html>
